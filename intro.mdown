@@ -1,0 +1,11 @@
+# Solent Brief
+
+Good afternoon everybody. As we all know, I'm here today to talk you through your next assignment.
+
+My name is Adam, and I work at Rareloop - a digital agency. I'm a fullstack developer and spend my days building websites and apps.
+
+We also run the Open Device Lab, which is a freely available community resource for developing and testing on modern devices. We currently have 22 devices which anybody can come in and use.
+
+This leads me on to your brief. We'd like you to design and develop us a new website.
+
+

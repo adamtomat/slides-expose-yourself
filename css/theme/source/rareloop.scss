@@ -1,0 +1,115 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+// Background of the presentation
+$backgroundColor: #fff;
+
+// Primary/body text
+$mainFont: 'Lato', Open Sans, sans-serif;
+$mainFontSize: 28px;
+$mainColor: #686b6b;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Lato', Open Sans, sans-serif;
+$headingColor: #000;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$headingFontWeight: 700;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+$rareloop-blue: #2dbcfd;
+
+// Links and actions
+$linkColor: $rareloop-blue;
+$linkColorHover: darken( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+    p {
+        display: block;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5em;
+        font-weight: 400;
+
+        + p {
+            margin-top: 2em;
+        }
+    }
+
+    blockquote {
+        quotes: '\201c' '\201d';
+        color: #fff;
+        background: none;
+        border: 0;
+        box-shadow: none;
+
+        p {
+            margin: 0;
+
+            &:before {
+                content: open-quote;
+            }
+
+            &:after {
+                content: close-quote;
+            }
+        }
+    }
+
+    section {
+        img {
+            border: 0;
+            background: none;
+            box-shadow: none;
+        }
+    }
+
+    .sub-title {
+        color: #a4a4a4;
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 1.25em;
+        text-transform: uppercase;
+    }
+}
